@@ -1,6 +1,7 @@
-export const Main = function () {
+export const Main = function (props) {
+  console.log(props.isDark);
   return (
-    <main>
+    <main className={props.isDark ? "dark" : "light"}>
       <h1 className="main-heading">Fun facts about React</h1>
       <ul className="main-content">
         <li>Was first released in 2013</li>
